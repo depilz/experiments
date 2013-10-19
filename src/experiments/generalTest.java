@@ -28,5 +28,13 @@ public class generalTest {
 		Assert.assertEquals("hola", g.saludar(1));
 		Assert.assertEquals( "", g.saludar(0));
 	}
+	
+	public void operacionesString() {
+		General g = new General();
+		Assert.assertEquals("No se invirtio bien la cadena", "edcba", g.invertir("abcde") );
+		Assert.assertEquals("No se invirtio bien la cadena", "Santiago", g.invertir("ogaitnaS") );
+		Assert.assertEquals("No se invirtio bien la cadena", "oruro", g.invertir("oruro") );
+		Assert.assertEquals("No se invirtio bien la cadena", "", g.invertir("") );
+	}
 
 }
